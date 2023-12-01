@@ -1,8 +1,6 @@
 # Interactive Xstate state machines demo
 
 
-## Demo
-
 ## Requirements
 
 -   Node JS and NPM
