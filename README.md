@@ -13,6 +13,11 @@
 npm install
 ```
 
+## Run Demo
+```bash
+NODE_OPTIONS=--openssl-legacy-provider npm run dev
+```
+
 ## Development
 
 Launch the `Complete development` launch configuration.
