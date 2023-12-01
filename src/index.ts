@@ -1,9 +1,9 @@
 import * as PIXI from 'pixi.js';
-import { HelloWorld } from './scenes/helloWorld';
+import { World } from './scenes/world';
 
 const load = (app: PIXI.Application) => {
     return new Promise<void>((resolve) => {
-        app.loader.add('assets/hello-world.png').load(() => {
+        app.loader.add('assets/corgi-assetnotail.png').load(() => {
             resolve();
         });
     });
@@ -18,7 +18,9 @@ const main = async () => {
     app.renderer.view.style.position = 'absolute';
     app.renderer.view.style.display = 'block';
 
-    // View size = windows
+    app.renderer.backgroundColor = 0xffffff;
+
+    // // View size = windows
     app.renderer.resize(window.innerWidth, window.innerHeight);
     window.addEventListener('resize', (e) => {
         app.renderer.resize(window.innerWidth, window.innerHeight);
@@ -29,7 +31,7 @@ const main = async () => {
     document.body.appendChild(app.view);
 
     // Set scene
-    var scene = new HelloWorld(app);
+    var scene = new World(app);
     app.stage.addChild(scene);
 };
 

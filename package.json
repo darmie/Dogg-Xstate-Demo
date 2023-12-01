@@ -1,12 +1,12 @@
 {
-    "name": "pixijs-typescript-starter",
+    "name": "corgi-games",
     "version": "0.0.1",
-    "description": "A boilerplate to start developping a PixiJS game or animation using TypeScript (VS Code & Chrome).",
+    "description": "Simple Game Demonstration of XState state machine",
     "scripts": {
         "dev": "webpack-dev-server -d",
         "build": "webpack"
     },
-    "author": "Guillaume DESFORGES <aceus02@gmail.com>",
+    "author": "Damilare Akinlaja <dreakinlaja@gmail.com>",
     "license": "MIT",
     "devDependencies": {
         "clean-webpack-plugin": "^3.0.0",
@@ -20,6 +20,7 @@
         "webpack-dev-server": "^3.11.3"
     },
     "dependencies": {
-        "pixi.js": "5.2.1"
+        "pixi.js": "5.2.1",
+        "xstate": "^4.38.3"
     }
 }
